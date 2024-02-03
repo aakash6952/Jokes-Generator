@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.thumb {
+  width:100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card {
+  width: 500px; /* Set a fixed width for the card */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: visible;
+  background-color: #FFEBD8 !important;
+}
+.card-title{
+font-family:'Protest Riot', sans-serif;
+font-weight: bold;
+color: lightcoral;
+text-align: center;
+font-size: 2rem;
+animation:slideAnimation 2s linear infinite;
+
+} 
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(-10%); /* Starts 50% to the left */
+  }
+  50% {
+    transform: translateX(10%); /* Moves 50% to the right */
+  }
+  100% {
+    transform: translateX(-10%); /* Ends 50% to the left */
+  }
+}
+.card-text {
+  color: #6c757d; /* Gray color */
+  
+}
+#jokeDisplay{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ef340fee;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; /* Adjust the margin as needed */
+  background: linear-gradient(to right, #FFC5C5,#D2E3C8) !important;
+}
